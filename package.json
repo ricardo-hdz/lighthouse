@@ -1,0 +1,23 @@
+{
+  "name": "lighthouse",
+  "version": "1.0.0",
+  "description": "Node.JS tool to run lighthouse audits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardo-hdz/lighthouse.git"
+  },
+  "keywords": [
+    "lighthouse",
+    "chrome"
+  ],
+  "author": "Ricardo Hdz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardo-hdz/lighthouse/issues"
+  },
+  "homepage": "https://github.com/ricardo-hdz/lighthouse#readme"
+}
