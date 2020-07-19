@@ -1,10 +1,14 @@
 {
-  "name": "lighthouse",
+  "name": "lighthouse_audit",
   "version": "1.0.0",
   "description": "Node.JS tool to run lighthouse audits",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "compare": "node lh.js --from $FROM --to $TO",
+    "perf": "node dist/lh.js --url http://localhost:4200/account/cruise-planner?bookingId=291068&shipCode=SY&sailDate=20200523"
   },
   "repository": {
     "type": "git",
@@ -19,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/ricardo-hdz/lighthouse/issues"
   },
-  "homepage": "https://github.com/ricardo-hdz/lighthouse#readme"
+  "homepage": "https://github.com/ricardo-hdz/lighthouse#readme",
+  "devDependencies": {
+    "glob": "^7.1.6",
+    "lighthouse": "^5.6.0",
+    "puppeteer": "^3.0.0",
+    "typescript": "^3.8.3",
+    "url": "^0.11.0",
+    "yargs": "^15.3.1"
+  }
 }
